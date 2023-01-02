@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <title>Tomasz Urtnowski - lekcja 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <h1 class="header__title">Kantor wymiany walut</h1>
+  </header>
+
+  <main class="main">
+    <section class="sectionTable">
+      <table class="table">
+        <caption class="table__caption"></caption>
+        <tr>
+          <th scope="col" class="table__cell table__cell--red">Waluta</th>
+          <th scope="col" class="table__cell table__cell--red">Wartość</th>
+          <th scope="col" class="table__cell table__cell--red">Wartość (złoty)</th>
+        </tr>
+        <tr>
+          <th scope="row" class="table__cell table__cell--fairy">
+            <span class="material-symbols-outlined">
+              euro
+            </span>
+          </th>
+          <td class="table__cell">1</td>
+          <td class="table__cell">4,69</td>
+        </tr>
+        <tr>
+          <th scope="row" class="table__cell table__cell--fairy">
+            <span class="material-symbols-outlined">
+              attach_money
+            </span>
+          </th>
+          <td class="table__cell">1</td>
+          <td class="table__cell">4,41</td>
+        </tr>
+        <tr>
+          <th scope="row" class="table__cell table__cell--fairy">
+            <span class="material-symbols-outlined">
+              currency_pound
+            </span>
+          </th>
+          <td class="table__cell">1</td>
+          <td class="table__cell">5,39</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="sectionForm">
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend>Kalkulator Wymiany Walut</legend>
+          <p>
+            <label>
+              Wybierz walutę:
+              <select class="js-cashValue" name="currencyExchange">
+                <option value="4.66">Euro</option>
+                <option value="4.38">Dolar Amerykański</option>
+                <option value="5.27">Funt Brytyjski</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Podaj kwotę waluty:
+              <input class="js-plnValue" type="number" name="PLN" min="0" step="0.01" required>
+            </label>
+          </p>
+
+          <button class="form__button">Przelicz wartość</button>
+
+          <p>
+            kwota po wymianie: <span class="form__result js-result">0</span> PLN
+          </p>
+        </fieldset>
+      </form>
+      <p class="sectionForm__paragraph">
+        kurs walut z dnia 27-12-2022
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

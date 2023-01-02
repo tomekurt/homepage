@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.body {
+    margin: 5 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.sectionTable {
+    max-width: 1000px;
+    overflow-x: auto;
+    margin: 5
+}
+
+.table__caption {
+    padding: bottom 5px; px;
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+.table {
+    width: 700px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0px 1px 20px 0px black;
+    text-align: center;
+
+}
+
+.table__cell {
+    border: 1px solid rgb(0, 0, 0);
+    width: 33.33%;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+.table__cell--red {
+    background-color: crimson;
+    color: #FFF;
+    }
+
+.table__cell--fairy {
+    background-color: rgb(211, 211, 211);
+    color: crimson;
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+/* euro/dollar/pound */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+}
+
+.section__button {
+    padding: 10px 20px; 
+    background-color: hsl(180, 100%, 50%);
+    margin: 10px auto;
+    display: block;
+}
+
+.section__button:hover {
+    background-color: hsl(180, 100%, 70%);
+}
+
+.section__button:active {
+    background-color: hsl(180, 100%, 80%);
+}
+
+.main {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    background-color: hsl(208, 68%, 80%);
+    border-radius: 5px;
+}
+
+.main__title {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.main__title--red {
+    color: crimson;
+}
+
+.header {
+    margin: 1 auto;
+    padding: 5px;
+    background-color: rgb(126, 181, 230);
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+.header__title {
+    color: crimson;
+    text-align: center;
+    text-shadow: 1px 1px 15px black; 
+}
+
+.header__title:hover {
+    color: brown;
+}
+
+.form {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+    box-shadow: 0px 1px 20px 0px black;
+    padding: 10px;
+}
+
+.form__fieldset {
+    padding: 20px;
+}
+
+.form__button {
+    background-color: crimson;
+    color: #FFF;
+    padding: 5px 10px;
+    border: none;
+}
+
+.form__result {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(111, 9, 143)
+}
+
+.sectionForm__paragraph {
+    text-align: center;
+    padding: 0 0 20px;
+    font-weight: bold;
+}
+
+.section__header {
+    text-align: center;
+    color: crimson;
+}
